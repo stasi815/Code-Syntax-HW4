@@ -1,13 +1,16 @@
-function FizzBuzz(targetnum)
-{
-    for(var i=1; i<targetnum; i++;) {
-        let result = "";
-        if (i%3 === 0) result += "Fizz";
-        if (i%5 === 0) result += "Buzz";
-        if (i%3 > 0 & i%5 > 0) result = i
-        console.log(result += "\n");
+/* eslint-disable no-console */
+function FizzBuzz(target) {
+  for (let i = 1; i <= target; i += 1) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('FizzBuzz');
+    } else if (i % 3 === 0) {
+      console.log('Fizz');
+    } else if (i % 5 === 0) {
+      console.log('Buzz');
+    } else {
+      console.log(i);
     }
+  }
 }
 
-FizzBuzz(50);
-
+FizzBuzz(15);
